@@ -6,6 +6,7 @@ import { Fontisto } from "@expo/vector-icons";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import ProductsScreen from "../../screens/ProductsScreen";
 
 // To use navigation you most import NavigationContainer and add navigation inside that.
 // The below navigaition is bottom navigation(like instagram) and for more read the documentions (https://reactnavigation.org/docs)
@@ -59,7 +60,7 @@ const BottomNavigator = () => {
           />
           <Tab.Screen
             name="Products"
-            component={HomeScreen}
+            component={ProductsScreen}
             options={{
               tabBarIcon: () => (
                 <AntDesign name="inbox" size={size} color={color} />

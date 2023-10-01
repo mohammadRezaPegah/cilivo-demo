@@ -93,7 +93,8 @@ export default CategoryProducts;
 
 const styles = StyleSheet.create({
   selectedCategoriesContainer: {
-    marginVertical: 30,
+    marginVertical: 5,
+    marginTop: 40,
     flexDirection: "row",
     justifyContent: "space-between",
     alignContent: "center",
