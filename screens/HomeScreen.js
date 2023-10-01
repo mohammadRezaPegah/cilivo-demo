@@ -5,8 +5,9 @@ import {
   Text,
   View,
   ActivityIndicator,
+  RefreshControl,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/home/Header";
 import SearchBox from "../components/home/SearchBox";
 import { ScrollView } from "react-native";
@@ -16,6 +17,7 @@ import { useFonts } from "expo-font";
 import SelectedCategroyProducts from "../components/home/categoryProducts/SelectedCategroyProducts";
 
 export default function HomeScreen() {
+  const [refreshing, setRefreshing] = useState(false);
   let [fontsloaded] = useFonts({
     "iran-sanse": require("../assets/fonts/IRANSansWeb.ttf"),
   });
