@@ -10,7 +10,6 @@ import React from "react";
 
 const Category = (props) => {
   const image = `https://cilivo.com/images/category/${props.categoryImage}`;
-  console.log(image);
   const url = props.url;
   const title = props.title;
   return (
@@ -20,7 +19,7 @@ const Category = (props) => {
           console.log();
         }}
       >
-        <View style={styles.categoryContainer}>
+        <View style={styles.categoryContainer} key={props.id}>
           <View
             style={{
               backgroundColor: "gray",
@@ -43,11 +42,12 @@ export default Category;
 const styles = StyleSheet.create({
   categoryContainer: {
     alignItems: "center",
-    marginBottom: 10,
+    marginBottom: 30,
   },
   categoryTitle: {
     fontSize: 10,
     textAlign: "center",
+    width: 75,
   },
   categoryImage: {
     width: 75,

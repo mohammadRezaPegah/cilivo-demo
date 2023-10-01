@@ -15,6 +15,7 @@ const Categories = () => {
   useEffect(() => {
     setCatLists([
       {
+        id: 1,
         pname: "کشاورزی و دامداری",
         slug: "Agriculture-and-Livestock",
         name: "Agriculture and Livestock",
@@ -23,6 +24,7 @@ const Categories = () => {
         image: "MAC.png",
       },
       {
+        id: 2,
         pname: "صنایع غذایی و نوشیدنی",
         slug: "Food-and-Beverage",
         name: "Food and Beverage",
@@ -31,6 +33,7 @@ const Categories = () => {
         image: "MAC.png",
       },
       {
+        id: 3,
         pname: "مصالح نساجی و-پوشاک",
         slug: "Textile-and-Clothing",
         name: "Textile and Clothing",
@@ -39,6 +42,7 @@ const Categories = () => {
         image: "AAA.png",
       },
       {
+        id: 4,
         pname: "چوب و کاغذ",
         slug: "Wood-and-Paper",
         name: "Wood and Paper",
@@ -47,6 +51,7 @@ const Categories = () => {
         image: "airplane.png",
       },
       {
+        id: 5,
         pname: "چرم و خز",
         slug: "Leather-and-Fur",
         name: "Leather and Fur",
@@ -55,6 +60,7 @@ const Categories = () => {
         image: "anchor.png",
       },
       {
+        id: 6,
         pname: "شیمیایی و بهداشتی",
         slug: "Chemical-and-Hygienic",
         name: "Chemical and Hygienic",
@@ -63,6 +69,7 @@ const Categories = () => {
         image: "antenna.png",
       },
       {
+        id: 7,
         pname: "دارویی",
         slug: "Pharmaceutical",
         name: "Pharmaceutical",
@@ -71,6 +78,7 @@ const Categories = () => {
         image: "art.png",
       },
       {
+        id: 8,
         pname: "پلیمر و پلاستیک",
         slug: "Polymer-and-Plastic",
         name: "Polymer and Plastic",
@@ -79,6 +87,7 @@ const Categories = () => {
         image: "car_and_repaire.png",
       },
       {
+        id: 9,
         pname: "فلزی و معدنی",
         slug: "Metal-and-Mining",
         name: "Metal and Mining",
@@ -95,6 +104,7 @@ const Categories = () => {
           categoryImage={category.image}
           url="#"
           title={category.pname}
+          id={category.id}
         />
       );
     });
@@ -146,7 +156,7 @@ const styles = StyleSheet.create({
   categoryHeader: {
     fontSize: 18,
     fontFamily: "iran-sanse",
-    fontWeight: "600",
+    fontWeight: "1000",
   },
   showAll: {
     fontFamily: "iran-sanse",

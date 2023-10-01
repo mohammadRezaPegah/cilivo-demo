@@ -13,6 +13,7 @@ import { ScrollView } from "react-native";
 import Stories from "../components/home/Stories";
 import Categories from "../components/home/Categories";
 import { useFonts } from "expo-font";
+import SelectedCategroyProducts from "../components/home/categoryProducts/SelectedCategroyProducts";
 
 export default function HomeScreen() {
   let [fontsloaded] = useFonts({
@@ -41,6 +42,7 @@ export default function HomeScreen() {
           <SearchBox />
           <Stories />
           <Categories />
+          <SelectedCategroyProducts />
         </SafeAreaView>
       </ScrollView>
     </>
